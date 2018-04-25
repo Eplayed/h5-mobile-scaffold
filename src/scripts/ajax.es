@@ -44,6 +44,8 @@ function isFormData(object) {
 }
 
 function ajax({ url = '', method = 'GET', data = {} } = {}) {
+  method === 'GET' && (url += '?' + formatParam(data))
+
   return new Promise((resolve, reject) => {
     if (method === 'POST') {
       if (!isFormData(data)) {
@@ -63,7 +65,7 @@ function ajax({ url = '', method = 'GET', data = {} } = {}) {
       }
     }
 
-    xhr.send(formatParam(data))
+    method === 'GET' ? xhr.send(null) : xhr.send(formatParam(data))
   })
 }
 

@@ -61,7 +61,7 @@ gulp.task('server', () => {
           // no default
         }
 
-        res.end(content)
+        content ? res.end(content) : next()
       }
     ]
   })

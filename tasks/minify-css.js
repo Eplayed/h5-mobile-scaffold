@@ -5,7 +5,9 @@ const cleanCSS = require('gulp-clean-css')
 const config = require('../.tplconfig')
 
 gulp.task('minify-css', () => {
-  return gulp.src(resolve(__dirname, '..', config.srcRoot, '**/*.' + config.cssExtName))
+  return gulp.src([
+    resolve(__dirname, '..', config.srcRoot, '**/*.' + config.cssExtName)
+  ])
     .pipe(stylus({
       compress: true,
       'include css': true

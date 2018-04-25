@@ -17,7 +17,6 @@ gulp.task('server', () => {
     open: false,
     port: 8686,
     files: [ resolve(rootDir, '**/*') ],
-    ignore: config.ignoreDirs.map(ignoreDir => resolve(rootDir, ignoreDir)),
     middleware: [
       (req, res, next) => {
         const reqFile = join(rootDir, extname(req.url) ? req.url : 'index.html')

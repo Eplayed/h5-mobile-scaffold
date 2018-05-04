@@ -1,4 +1,5 @@
 const { join, resolve, extname, dirname } = require('path')
+const url = require('url')
 const babel = require('babel-core')
 const pug = require('pug')
 const stylus = require('stylus')
@@ -19,7 +20,8 @@ gulp.task('server', () => {
     files: [ resolve(rootDir, '**/*') ],
     middleware: [
       (req, res, next) => {
-        const reqFile = join(rootDir, extname(req.url) ? req.url : 'index.html')
+        const pathname = url.parse(req.url).pathname
+        const reqFile = join(rootDir, extname(pathname) ? pathname : 'index.html')
         const myExtname = (extname(reqFile).match(/\.(.*)$/) || [ '', '' ])[1]
 
         let content = ''

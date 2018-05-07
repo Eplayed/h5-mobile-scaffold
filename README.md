@@ -2,7 +2,7 @@
 
 这是一个简单且实用的 H5 移动端开发脚手架。专门为移动端而生，可生成在browser上访问多端口显示 H5 宣传页。
 
-![h5](http://images.cnblogs.com/cnblogs_com/hao5599/1211580/o_h5.png)
+![h5](http://images.cnblogs.com/cnblogs_com/hao5599/1211580/o_66.png)
 
 > 让H5制作变得更加个性化
 
@@ -41,7 +41,7 @@ npm run build
         /src                --> 项目的源码，所有文件都可编辑
             /fonts          --> 存放字体文件
             /images         --> 存放图片文件
-            /javascripts    --> JS源文件，经Browserify打包后生成/bundle.js
+            /javascripts    --> JS源文件，经Gulp打包后生成/bundle.js
             index.html      --> 页面HTML
 	    .gitignore
 	    gulpfile.js             --> Gulp任务

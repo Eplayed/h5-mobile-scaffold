@@ -1,4 +1,4 @@
-##H5 移动端开发脚手架 ##
+## H5 移动端开发脚手架 ##
 
 这是一个简单且实用的 H5 移动端开发脚手架。专门为移动端而生，可生成在browser上访问多端口显示 H5 宣传页。
 
@@ -10,22 +10,21 @@
 1. [Pug](https://github.com/pugjs/pug) --> 用于实现template模版引擎
 2. [Stylus](https://github.com/stylus/stylus) --> 用于编写css样式
 3. [Supervisor](https://github.com/petruisfan/node-supervisor) --> 用于node热加载服务
-4. other ...
 
 ## 下载 ##
 
-### 克隆本仓库 ###
+#### 克隆本仓库 ####
 ```bash
 git clone https://github.com/cntanglijun/h5-mobile-scaffold.git <your-dir-name>
 ```
 
-### 启动服务器 ###
+#### 启动服务器 ####
 via npm:
 ```bash
 npm start
 ```
 
-### 打包发布 ###
+#### 打包发布 ####
 ```bash
 npm run build
 ```

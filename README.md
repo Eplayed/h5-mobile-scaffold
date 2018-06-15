@@ -28,5 +28,5 @@ npm run build
 
 ## 徽章
 
-[![Travis](https://img.shields.io/travis/cntanglijun/h5-mobile-scaffold.svg?style=for-the-badge)](https://github.com/cntanglijun/h5-mobile-scaffold)
+[![Travis](https://img.shields.io/travis/cntanglijun/h5-mobile-scaffold.svg?style=for-the-badge)](https://travis-ci.org/cntanglijun/h5-mobile-scaffold)
 [![license](https://img.shields.io/github/license/cntanglijun/h5-mobile-scaffold.svg?style=for-the-badge)](https://github.com/cntanglijun/h5-mobile-scaffold/blob/master/LICENSE)

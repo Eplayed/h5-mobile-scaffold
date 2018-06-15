@@ -1,0 +1,1 @@
+define(["jquery","./getData"],function(e,t){"use strict";var n=o(e),u=o(t);function o(e){return e&&e.__esModule?e:{default:e}}console.log((0,n.default)().jquery),(0,u.default)({url:"https://api.bootcdn.cn/names.min.json"})});

@@ -18,5 +18,10 @@ module.exports = {
   // 发布需要忽略的目录
   distIgnoreDirs: [
     'template'
+  ],
+
+  // 需要进行 requirejs 合并的文件列表
+  needCombineFiles: [
+    'index'
   ]
 }

@@ -16,7 +16,7 @@ gulp.task('server', () => {
     serveStatic: [ rootDir ],
     proxy: 'http://127.0.0.1:3333',
     open: false,
-    port: 8686,
+    port: 8080,
     files: [ resolve(rootDir, '**/*') ],
     middleware: [
       (req, res, next) => {

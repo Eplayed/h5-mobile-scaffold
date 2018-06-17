@@ -15,9 +15,10 @@ module.exports = {
   // 需要 styl 解析的文件后缀名
   cssExtName: 'styl',
 
-  // 发布需要忽略的目录
+  // 发布需要忽略的目录或文件
   distIgnoreDirs: [
-    'template'
+    'template',
+    'scripts/lib'
   ],
 
   // 需要进行 requirejs 合并的文件列表

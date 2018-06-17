@@ -1,3 +1,5 @@
+/* global XMLHttpRequest */
+
 const xhr = new XMLHttpRequest()
 
 function buildParam(prefix, obj, add) {
@@ -56,7 +58,7 @@ function ajax({ url = '', method = 'GET', data = {} } = {}) {
     xhr.open(method, url)
 
     xhr.onreadystatechange = () => {
-      if(xhr.readyState === 4 && xhr.status === 200) {
+      if (xhr.readyState === 4 && xhr.status === 200) {
         if (xhr.status === 200) {
           resolve(JSON.parse(xhr.responseText))
         } else {

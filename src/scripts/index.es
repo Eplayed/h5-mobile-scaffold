@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import getData from './getData'
+import getData from './lib/getData'
 
 console.log($().jquery)
 

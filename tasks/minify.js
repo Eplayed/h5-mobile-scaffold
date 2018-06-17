@@ -6,7 +6,7 @@ const config = require('../.tplconfig')
 
 const gulpPlugins = gulpLoadPlugins()
 
-gulp.task('minify', [ 'rewrite' ], cb => {
+gulp.task('minify', cb => {
   const htmlFilter = gulpPlugins.filter([ '**/*.html' ], { restore: true })
   const cssFilter = gulpPlugins.filter([ '**/*.css' ], { restore: true })
   const jsFilter = gulpPlugins.filter([ '**/*.js' ], { restore: true })

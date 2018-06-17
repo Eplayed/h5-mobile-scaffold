@@ -6,13 +6,13 @@ const config = require('../.tplconfig')
 
 const gulpPlugins = gulpLoadPlugins()
 
-gulp.task('revision', [ 'compile' ], cb => {
+gulp.task('revision', [ 'combine' ], cb => {
   pump(
     [
       gulp.src(
         [
           resolve(__dirname, '..', config.distRoot, '**/*'),
-          '!**/*.html'
+          '!**/*.{html,json}'
         ]
       ),
 

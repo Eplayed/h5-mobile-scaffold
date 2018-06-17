@@ -1,0 +1,11 @@
+[
+  {
+    "name": "index",
+    "path": "FUNCTION",
+    "included": [
+      "/home/travis/build/cntanglijun/h5-mobile-scaffold/dist/scripts/lib/ajax.js",
+      "/home/travis/build/cntanglijun/h5-mobile-scaffold/dist/scripts/lib/getData.js",
+      "/home/travis/build/cntanglijun/h5-mobile-scaffold/dist/scripts/index.js"
+    ]
+  }
+]

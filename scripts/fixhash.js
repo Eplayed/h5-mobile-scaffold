@@ -1,4 +1,4 @@
-const { resolve, dirname, join, basename } = require('path')
+const { resolve, dirname, join, basename, sep } = require('path')
 const fs = require('fs')
 const config = require('../.tplconfig')
 
@@ -17,7 +17,7 @@ config.needCombineFiles.forEach(file => {
   const filePath = join(basename(baseUrl), file + '.js')
 
   // Hash 后的文件
-  const hashFilePath = manifest[filePath]
+  const hashFilePath = manifest[filePath.split(sep).join('/')]
 
   // Requirejs 文件信息
   const fileInfo = rjsManifest.find(item => item.name === file)

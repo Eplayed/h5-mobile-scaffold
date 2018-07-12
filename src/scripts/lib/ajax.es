@@ -49,13 +49,14 @@ function ajax({ url = '', method = 'GET', data = {} } = {}) {
   method === 'GET' && (url += '?' + formatParam(data))
 
   return new Promise((resolve, reject) => {
+
+    xhr.open(method, url)
+
     if (method === 'POST') {
       if (!isFormData(data)) {
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
       }
     }
-
-    xhr.open(method, url)
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4 && xhr.status === 200) {

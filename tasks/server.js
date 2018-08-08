@@ -35,13 +35,13 @@ gulp.task('server', () => {
               pretty: true
             }
 
-            content = pug.renderFile(reqFile.replace('html', config.htmlExtName), option)
+            content = pug.renderFile(reqFile.replace(/html$/, config.htmlExtName), option)
             break
 
           case 'css':
             res.setHeader('Content-Type', 'text/css')
 
-            content = stylus(fs.readFileSync(reqFile.replace('css', config.cssExtName), 'utf8'))
+            content = stylus(fs.readFileSync(reqFile.replace(/css$/, config.cssExtName), 'utf8'))
               .set('paths', [ dirname(reqFile) ])
               .set('include css', true)
               .use(nib())
@@ -56,7 +56,7 @@ gulp.task('server', () => {
               sourceMaps: 'inline'
             }
 
-            content = babel.transformFileSync(reqFile.replace('js', config.jsExtName), option).code
+            content = babel.transformFileSync(reqFile.replace(/js$/, config.jsExtName), option).code
             break
 
           // no default

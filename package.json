@@ -1,7 +1,7 @@
 {
   "name": "h5-mobile-scaffold",
   "private": true,
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "这是一个简单、实用、基础的 H5 移动端开发脚手架。",
   "scripts": {
     "start": "supervisor -w tasks -x gulp server",

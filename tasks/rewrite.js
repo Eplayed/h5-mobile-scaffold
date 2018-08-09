@@ -32,7 +32,7 @@ gulp.task('rewrite', [ 'revision' ], cb => {
     [
       gulp.src(
         [
-          resolve(__dirname, '..', config.distRoot, '**/*.html')
+          resolve(__dirname, '..', config.distRoot, '**/*.{html,css}')
         ]
       ),
 

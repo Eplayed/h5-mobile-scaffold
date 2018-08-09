@@ -1,10 +1,11 @@
 {
   "favicon.ico": "favicon-8058d0f550.ico",
+  "images/dragonball.png": "images/dragonball-b6d909e3a2.png",
   "images/gotenks.png": "images/gotenks-a38d94613d.png",
   "scripts/config.js": "scripts/config-394ca3221d.js",
   "scripts/index.js": "scripts/index-4d48c1faa5.js",
   "scripts/lib/ajax.js": "scripts/lib/ajax-af26cdd81e.js",
   "scripts/lib/getData.js": "scripts/lib/getData-e3f02419ee.js",
   "stylesheets/global.css": "stylesheets/global-fb435875e3.css",
-  "stylesheets/index.css": "stylesheets/index-0e6bb30d55.css"
+  "stylesheets/index.css": "stylesheets/index-851c57ef7e.css"
 }
